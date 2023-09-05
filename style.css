@@ -120,35 +120,115 @@ nav ul li a:hover::after{
     margin-top: 50px;
     transition: background-color 0.3s ease-in-out;
     border: 1px solid #ffffff;
+    
 }
 
 .explore-button:hover {
     background: linear-gradient(130deg, #5cbd97 0%, #275f24 100%, #404040 90%);
 }
+/* -------------About------------ */
+#about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/wallpaper2.jpg);
+    margin-top: 16%;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 60px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    padding-top: 5%; /* Adjust the margin-top for positioning */
+}
+
+.about-title span.box {
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-title span.number {
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px 5px;
+    border-radius: 1px;
+    color: #fff;
+}
+
+.about-container {
+    max-width: 50%; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for readability */
+    border-radius: 5px;
+    margin-top: 2%
+}
+
+.about-container p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+}
+.explore-button2 {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%; /* Position the button 50% from the left */
+    transform: translateX(-50%); /* Center the button using a negative translateX */
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #ffffff;
+    margin-top: 50px;
+}
+
+
+.explore-button2:hover {
+    background: linear-gradient(130deg, #5cbd97 0%, #275f24 100%, #404040 90%);
+}
 
 /* ----------Characters---------- */
-#characters{
-    
-    padding: 80px 0;
-    color:#ababab;
-}
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+
+#characters {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/wallpaper3.jpg); /* Replace with your desired image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-character-col-1{
-    flex-basis: 35%;
+/* Add this to your CSS file */
+.characters-title {
+    text-align: center;
+    font-size: 50px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    padding-top: 5%; /* Adjust the margin-top for positioning */
 }
 
-.character-col-1 img {
-    width: 75%; /* Adjust the width as needed */
-  
-    margin-top: 300px;
+.characters-title span.box {
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
 }
 
-.character-col-2 {
-    flex-basis:60%;
+.characters-title span.number {
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px 5px;
+    border-radius: 1px;
+    color: #fff;
 }
