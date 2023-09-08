@@ -51,10 +51,52 @@
 <!-- ------------Characters--------- -->
 <div id="characters">
     <h3 class="characters-title">Ch<span class="box"><span class="letter">Ar</span><span class="number">18</span></span>acters</h3>
-    <div class="character-container">
-
-
+    <div class="character-tabs">
+        <button class="tablinks" onclick="openTab(event, 'main')">Main Characters</button>
+        <button class="tablinks" onclick="openTab(event, 'side')">Side Characters</button>
+        <button class="tablinks" onclick="openTab(event, 'minor')">Minor Characters</button>
     </div>
+    <div class="character-content">
+        <!-- Main Characters Tab -->
+        <div id="main" class="tabcontent">
+            <div class="character-list">
+                <div class="character">
+                    <img src="images/WalterWhite.jpg" alt="Walter White">
+                    <h4>Walter White</h4>
+                    <p>Main character info goes here.</p>
+                </div>
+                <!-- Add more main characters -->
+                <div class="character">
+                    <img src="images/WalterWhite.jpg" alt="Walter White">
+                    <h4>Walter White</h4>
+                    <p>Main character info goes here.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Side Characters Tab -->
+        <div id="side" class="tabcontent">
+            <div class="character-list">
+                <div class="character">
+                    <img src="images/JessePinkman.jpg" alt="Jesse Pinkman">
+                    <h4>Jesse Pinkman</h4>
+                    <p>Side character info goes here.</p>
+                </div>
+                <!-- Add more side characters -->
+            </div>
+        </div>
+        <!-- Minor Characters Tab -->
+        <div id="minor" class="tabcontent">
+            <div class="character-list">
+                <div class="character">
+                    <img src="images/Character1.jpg" alt="Character 1">
+                    <h4>Character 1</h4>
+                    <p>Minor character info goes here.</p>
+                </div>
+                <!-- Add more minor characters -->
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
 </div>
 
 
