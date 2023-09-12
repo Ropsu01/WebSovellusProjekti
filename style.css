@@ -198,20 +198,21 @@ nav ul li a:hover::after{
 /* ----------Characters---------- */
 
 #characters {
-    width: 100%;
+    /* width: 100%;
     height: 200vh;
-    background-image: url(images/wallpaper3.jpg); /* Replace with your desired image path */
+    background-image: url(images/wallpaper3.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 }
 
 /* Add this to your CSS file */
 .characters-title {
     text-align: center;
-    font-size: 50px; /* Adjust the font size as needed */
+    font-size: 70px; /* Adjust the font size as needed */
     color: #fff; /* Text color */
     padding-top: 5%; /* Adjust the margin-top for positioning */
+    padding-bottom: 5%;;
 }
 
 .characters-title span.box {
@@ -233,41 +234,79 @@ nav ul li a:hover::after{
     color: #fff;
 }
 
-/* Add this CSS to your stylesheet */
+/* Style the tab links */
+.tablinks {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the tab links */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Adjust spacing between tab links */
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+/* Style the tab links on hover */
+.tablinks:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+/* Style the tab links when active (selected) */
+.tablinks.active {
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);}
+
+
+/* Center-align the tablinks using Flexbox */
+.character-tabs {
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 2%;
+}
+
+.character-content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    margin-top: none;
+}
+
 
 /* Style the character container */
 .character-list .character {
-    display: flex;
-    align-items: center; /* Vertically center items */
-    margin-bottom: 20px; /* Adjust spacing between characters */
+    display: flex; /* Use flexbox to control the layout */
+    flex-direction: row; /* Display the elements in a row layout */
+    align-items: center; /* Center-align items vertically */
+    margin-bottom: 10%; /* Adjust spacing between characters */
 }
 
 /* Style the character image */
 .character-list .character img {
-    max-width: 100%; /* Adjust the image size as needed */
-    margin-right: 20px; /* Adjust spacing between image and text */
+    max-width: 40%; /* Adjust the image size as needed */
+    margin-right: 10px; /* Adjust spacing between image and text */
 }
 
-/* Style the character info */
-.character-list .character h4,
-.character-list .character p {
+/* Style the character text container */
+.character-list .character .character-text {
+    flex: 1; /* Allow the text container to expand and fill remaining space */
+    display: flex; /* Use flexbox for text container */
+    flex-direction: column; /* Display name and info in a column layout */
+}
+
+/* Style the character name */
+.character-list .character .character-text h4 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the character name */
+}
+
+/* Style the character info text */
+.character-list .character .character-text p {
     margin: 0; /* Remove default margins */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #f5f5f5; /* Change the text color to make it easier to read */
+    line-height: 1.5; /* Adjust line height for better readability */
+    text-align: center; /* Center-align the character info text */
+    padding-top: 50px; /* Add padding between name and info text */
 }
-
-/* Responsive layout: On smaller screens, stack character info below the image */
-@media (max-width: 768px) {
-    .character-list .character {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center text */
-    }
-
-    .character-list .character img {
-        margin-right: 0; /* Remove spacing between image and text */
-        margin-bottom: 10px; /* Adjust spacing between items */
-    }
-}
-
-
-
-
 
