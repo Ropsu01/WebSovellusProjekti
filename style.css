@@ -234,6 +234,21 @@ nav ul li a:hover::after{
     color: #fff;
 }
 
+.character-info {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+
+}
+
+.character-info a  {
+        color:#46a08c;
+        text-decoration: none; /* Remove underline */
+    }
+
+
+
 /* Style the tab links */
 .tablinks {
     background-color: #333; /* Background color */
@@ -266,7 +281,7 @@ nav ul li a:hover::after{
 
 .character-content {
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-top: 5%;
     margin-top: none;
 }
@@ -307,6 +322,6 @@ nav ul li a:hover::after{
     color: #f5f5f5; /* Change the text color to make it easier to read */
     line-height: 1.5; /* Adjust line height for better readability */
     text-align: center; /* Center-align the character info text */
-    padding-top: 50px; /* Add padding between name and info text */
+    padding-top: 20px; /* Add padding between name and info text */
 }
 

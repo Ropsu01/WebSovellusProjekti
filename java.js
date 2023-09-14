@@ -1,4 +1,4 @@
-function openTab(evt, tabName) {
+function openTab(tabName) {
     var i, tabcontent, tablinks;
 
     // Hide all tab content
@@ -15,5 +15,9 @@ function openTab(evt, tabName) {
 
     // Show the selected tab content and activate the tab link
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.classList.add("active");
+    document.querySelector('button[data-tab="' + tabName + '"]').classList.add("active");
 }
+
+window.onload = function () {
+    openTab('main'); // Pass the tab name as a string
+};
