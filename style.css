@@ -197,14 +197,7 @@ nav ul li a:hover::after{
 
 /* ----------Characters---------- */
 
-#characters {
-    /* width: 100%;
-    height: 200vh;
-    background-image: url(images/wallpaper3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat; */
-}
+
 
 /* Add this to your CSS file */
 .characters-title {
@@ -325,3 +318,105 @@ nav ul li a:hover::after{
     padding-top: 20px; /* Add padding between name and info text */
 }
 
+/* -------- Episodes --------- */
+
+.episodes-title {
+    text-align: center;
+    font-size: 70px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    padding-top: 5%; /* Adjust the margin-top for positioning */
+    padding-bottom: 5%;;
+}
+
+.episodes-title span.box {
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
+    border: 1px solid #ffffff;
+    border-radius: 1px;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.episodes-title span.number {
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px 5px;
+    border-radius: 1px;
+    color: #fff;
+}
+
+/* Style the tab links */
+.episode-tablinks {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the tab links */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-right: 10px; /* Adjust spacing between tab links */
+    font-size: 20px;
+    border-radius: 1px;
+}
+
+/* Style the tab links on hover */
+.episode-tablinks:hover:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+/* Style the tab links when active (selected) */
+.episode-tablinks.active.active {
+    background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);}
+
+
+/* Center-align the tablinks using Flexbox */
+.episode-tabs {
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    align-items: center; /* Vertically center-align */
+    margin-top: 2%;
+}
+
+.episode-content {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 5%;
+    margin-top: none;
+}
+
+.episode-list .episode {
+    display: flex; /* Use flexbox to control the layout */
+    flex-direction: row; /* Display the elements in a row layout */
+    align-items: center; /* Center-align items vertically */
+    margin-bottom: 10%; /* Adjust spacing between characters */
+}
+
+/* Style the character image */
+.episode-list .episode img {
+    max-width: 40%; /* Adjust the image size as needed */
+    margin-right: 10px; /* Adjust spacing between image and text */
+}
+
+/* Style the character text container */
+.episode-list .episode .episode-text {
+    flex: 1; /* Allow the text container to expand and fill remaining space */
+    display: flex; /* Use flexbox for text container */
+    flex-direction: column; /* Display name and info in a column layout */
+}
+
+/* Style the character name */
+.episode-list .episode .episode-text h4 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align the character name */
+}
+
+/* Style the character info text */
+.episode-list .episode .episode-text p {
+    margin: 0; /* Remove default margins */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #f5f5f5; /* Change the text color to make it easier to read */
+    line-height: 1.5; /* Adjust line height for better readability */
+    text-align: center; /* Center-align the character info text */
+    padding-top: 20px; /* Add padding between name and info text */
+}

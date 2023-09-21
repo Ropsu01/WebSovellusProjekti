@@ -16,7 +16,7 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#characters">Characters</a></li>
-                <li><a href="#">Episodes</a></li>
+                <li><a href="#episodes">Episodes</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Games & Trivia</a></li>
                 <li><a href="#">Map</a></li>
@@ -55,8 +55,8 @@
         <p>Meet the main characters and side characters from the TV show:<br> Please note that i have only included the most important characters in my opinion.<br> You can find all the characters and more information <a href="https://breakingbad.fandom.com/wiki/Category:Breaking_Bad_Characters" target="_blank">here</a>.</p>
     <div class="character-tabs">
         <button class="tablinks active" onclick="openTab('main')" data-tab="main">Main Characters</button>
-<button class="tablinks" onclick="openTab('side')" data-tab="side">Side Characters</button>
-<button class="tablinks" onclick="openTab('minor')" data-tab="minor">Minor Characters</button>
+        <button class="tablinks" onclick="openTab('side')" data-tab="side">Side Characters</button>
+        <button class="tablinks" onclick="openTab('minor')" data-tab="minor">Minor Characters</button>
 
     </div>
     <div class="character-content">
@@ -294,6 +294,49 @@
                 </div>
             </div>
         </div>
+    </div>
+    <script src="java.js"></script>
+</div>
+
+
+<!-- Episodes -->
+<div id="episodes">
+    <h2 class="episodes-title">Ep<span class="box"><span class="letter">I</span><span class="number">53</span></span>sodes</h2>
+    <div class="character-info">
+        <p>Explore the different episodes of Breaking Bad by season. Click on the tabs below to navigate:</p>
+     <!-- Episodes Tab Selector -->
+<div class="episode-tabs">
+    <button class="episode-tablinks active" onclick="openEpisodeTab('season1')" data-tab="season1">Season 1</button>
+    <button class="episode-tablinks" onclick="openEpisodeTab('season2')" data-tab="season2">Season 2</button>
+    <!-- Add more season tabs as needed -->
+</div>
+
+<div class="episode-content">
+    <!-- Season 1 Tab -->
+    <div id="season1" class="episode-tabcontent">
+        <div class="episode-list">
+            <div class="episode">
+                <img src="images/Pilot.jpg" alt="Pilot">
+                <div class="episode-text">
+                <h4>S1.E1 ∙ Pilot</h4>
+                <p>"Pilot" (titled "Breaking Bad" on DVD and Blu-ray releases) is the series premiere of the American television crime drama series Breaking Bad. The episode was directed and written by series creator and showrunner Vince Gilligan. It first aired on AMC on January 20, 2008.
+
+                    In the episode, chemistry teacher Walter White (Bryan Cranston) is diagnosed with terminal lung cancer. Keeping it a secret from his pregnant wife Skyler (Anna Gunn) and their teenage son Walter Jr. (RJ Mitte), he decides that he wants to spend his last years saving money for his family. After going on a drug bust with his brother-in-law and DEA agent Hank Schrader (Dean Norris), Walt spots his former student Jesse Pinkman (Aaron Paul) and later blackmails him into helping him cook methamphetamine in an RV.
+                    
+                    The pilot received various nominations at the 60th Primetime Emmy Awards, with Cranston winning the Primetime Emmy Award for Outstanding Lead Actor in a Drama Series and Gilligan earning a nomination for Outstanding Directing.</p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <!-- Season 2 Tab -->
+    <div id="season2" class="episode-tabcontent">
+        <!-- Add episode details for Season 2 here -->
+        <p>kglfjlgkfjd</p>
+    </div>
+    <!-- Add more season tabs and episode details as needed -->
+</div>
+
     </div>
     <script src="java.js"></script>
 </div>
