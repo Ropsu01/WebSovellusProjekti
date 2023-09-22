@@ -273,9 +273,9 @@ nav ul li a:hover::after{
 }
 
 .character-content {
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
+    padding-top: 1%;
     margin-top: none;
 }
 
@@ -378,7 +378,7 @@ nav ul li a:hover::after{
 }
 
 .episode-content {
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 5%;
     padding-top: 5%;
     margin-top: none;
@@ -419,4 +419,13 @@ nav ul li a:hover::after{
     line-height: 1.5; /* Adjust line height for better readability */
     text-align: center; /* Center-align the character info text */
     padding-top: 20px; /* Add padding between name and info text */
+}
+
+.rating img {
+    width: 2%; /* Set the desired width for the star */
+    height: 2%; /* Set the desired height for the star */
+}
+
+.rating {
+    padding-left: 2%;
 }
