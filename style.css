@@ -7,10 +7,11 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background: #080808;
+body {
+    background: linear-gradient(to bottom right, #080808, #111111);
     color: #fff;
 }
+
 #header{
     /*position: relative;*/
     width: 100%;
@@ -22,6 +23,8 @@ body{
     
     
 }
+
+
 .container{
     padding: 10px 10%;
 }
@@ -203,10 +206,9 @@ nav ul li a:hover::after{
 /* Add this to your CSS file */
 .characters-title {
     text-align: center;
-    font-size: 70px; /* Adjust the font size as needed */
-    color: #fff; /* Text color */
-    padding-top: 5%; /* Adjust the margin-top for positioning */
-    padding-bottom: 5%;;
+    font-size: 70px; /* Simplify the font size */
+    color: #fff;
+    padding: 5% 0;
 }
 
 .characters-title span.box {
@@ -284,9 +286,9 @@ nav ul li a:hover::after{
 /* Style the character container */
 .character-list .character {
     display: flex; /* Use flexbox to control the layout */
-    flex-direction: row; /* Display the elements in a row layout */
+    flex-direction: column; /* Display the elements in a row layout */
     align-items: center; /* Center-align items vertically */
-    margin-bottom: 10%; /* Adjust spacing between characters */
+    margin-bottom: 5%; /* Adjust spacing between characters */
 }
 
 /* Style the character image */
@@ -405,6 +407,7 @@ nav ul li a:hover::after{
     flex: 1; /* Allow the text container to expand and fill remaining space */
     display: flex; /* Use flexbox for text container */
     flex-direction: column; /* Display name and info in a column layout */
+    margin-left: 5%;
 }
 
 /* Style the character name */
@@ -433,8 +436,12 @@ nav ul li a:hover::after{
     padding-left: 2%;
 }
 
-/* <-------------Gallery-----------> */
 
+
+/* <-------------Gallery-----------> */
+/* #gallery{
+    background-color: #275f24;
+} */
 .gallery-title {
     text-align: center;
     font-size: 70px; /* Adjust the font size as needed */
@@ -443,6 +450,9 @@ nav ul li a:hover::after{
     padding-bottom: 5%;;
 }
 
+.image-gallery {
+    margin-top: 5%;
+}
 .gallery-title span.box {
     background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
     border: 1px solid #ffffff;
@@ -461,3 +471,117 @@ nav ul li a:hover::after{
     border-radius: 1px;
     color: #fff;
 }
+
+.slideshow-container {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .imageSlides {
+    display: none;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Navigation Arrows */
+  a.prev, a.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  a.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  a.prev {
+    left: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;                            /* Initially hide the caption */
+    transition: opacity 0.3s ease;         /* Smooth transition effect */
+}
+
+.image-container:hover .caption {
+    opacity: 1;                            /* Show the caption on hover */
+}
+
+/* Thumbnails for Navigation */
+.slideshow-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail img {
+    width: 50px; /* adjust based on desired thumbnail size */
+    height: 50px;
+    opacity: 0.6; /* make non-active thumbnails a bit transparent */
+    object-fit: cover; /* This will crop the image to fit the container while maintaining its aspect ratio */
+    object-position: center; /* This ensures the center of the image is always visible */
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail.active img, .thumbnail:hover img {
+    opacity: 1; /* active/hovered thumbnail fully opaque */
+    transform: scale(1.1); /* Slightly scale up on hover or when active */
+}
+
+.quote-audio-gallery {
+    margin-top: 10%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #header{
+        height: 210vh;
+    }
+    #about{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 210vh;      
+    }
+  }

@@ -20,7 +20,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#characters">Characters</a></li>
                 <li><a href="#episodes">Episodes</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#">Games & Trivia</a></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="#">Music</a></li>
@@ -45,7 +45,7 @@
     <h2 class="about-title">A<span class="box"><span class="letter">B</span><span class="number">5</span></span>out</h2>
     <div class="about-container">
         <p>
-            Me:<br><br>I'm a Breaking Bad fan, and this website is my school project. It's a fan tribute to the show, and I don't own any rights to Breaking Bad. Enjoy exploring the world of Breaking Bad with me!        </p>
+            Me:<br><br>I like the show Breaking Bad, and this website is my school project. It's a "fan" tribute to the show, and I don't own any rights to Breaking Bad. Enjoy exploring the world of Breaking Bad with me!        </p>
     </div>
     <div class="about-container">
         <p>
@@ -305,7 +305,7 @@
         </div>
     </div>
     
-    <script src="java.js"></script>
+   
 </div>
 
 
@@ -785,16 +785,163 @@
     </div>
 </div>
 
-    <script src="java.js"></script>
+   
 </div>
  
 <!-- Gallery -->
-<div id="Gallery">
-   
+<div id="gallery">
     <h4 class="gallery-title">Gallery</h4>
     <div class="gallery-content">
+        <p>Here are some iconic images, quotes, audios, and videos from the show. 
+            <br>*SPOILER WARNING*
+        </p>
 
+        <!-- Image Gallery -->
+<div class="image-gallery">
+    <h2>Images</h2>
+    
+    <!-- Slideshow for images -->
+    <div class="slideshow-container">
+
+        <!-- Individual Slides (Repeat this structure for each image) -->
+        <div class="imageSlides fade">
+            <div class="numbertext">1 / 10</div>
+            <div class="image-container">
+            <img src="images/moment1.jpg" style="width:100%">
+            <div class="caption">Hank's final moment (Ozymandias)</div>
+        </div>
+    </div>   
+        <div class="imageSlides fade">
+            <div class="numbertext">2 / 10</div>
+            <div class="image-container">
+            <img src="images/moment2.jpg" style="width:100%">
+            <div class="caption">Gus Fring's last scene (Face Off)</div>
+        </div>
+    </div>
+        <div class="imageSlides fade">
+            <div class="numbertext">3 / 10</div>
+            <div class="image-container">
+            <img src="images/moment3.jpg" style="width:100%">
+            <div class="caption">The remote-controlled M60 machine gun wreaks havoc (Felina)</div>
+        </div>
+    </div>
+    <div class="imageSlides fade">
+            <div class="numbertext">4 / 10</div>
+            <div class="image-container">
+            <img src="images/moment4.jpg" style="width:100%">
+            <div class="caption">Walter's meltdown in the crawl space (Crawl Space)</div>
+        </div>
+    </div>
+    <div class="imageSlides fade">
+            <div class="numbertext">5 / 10</div>
+            <div class="image-container">
+            <img src="images/moment5.jpg" style="width:100%">
+            <div class="caption">Walter White's death (Felina)</div>
+        </div>
+    </div>
+    <div class="imageSlides fade">
+            <div class="numbertext">6 / 10</div>
+            <div class="image-container">
+            <img src="images/moment6.jpg" style="width:100%">
+            <div class="caption">The Cousins ambush Hank (One Minute)</div>
+        </div>
+    </div>
+    <div class="imageSlides fade">
+        <div class="numbertext">7 / 10</div>
+        <div class="image-container">
+        <img src="images/moment7.jpg" style="width:100%">
+        <div class="caption">Hank discovers the book (Gliding Over All)</div>
     </div>
 </div>
+<div class="imageSlides fade">
+    <div class="numbertext">8 / 10</div>
+    <div class="image-container">
+    <img src="images/moment8.jpg" style="width:100%">
+    <div class="caption">Jesse goes to shoot Gale (Full Measure)</div>
+</div>
+</div>
+<div class="imageSlides fade">
+    <div class="numbertext">9 / 10</div>
+    <div class="image-container">
+    <img src="images/moment9.jpg" style="width:100%">
+    <div class="caption">"This is not meth" (Explosion)</div>
+</div>
+</div>
+<div class="imageSlides fade">
+    <div class="numbertext">10 / 10</div>
+    <div class="image-container">
+    <img src="images/moment10.jpg" style="width:100%">
+    <div class="caption">"Walt lets Jane die" (Phoenix)</div>
+</div>
+</div>
+
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <!-- Thumbnails for Navigation -->
+<div class="slideshow-thumbnails">
+    <div class="thumbnail" onclick="currentSlide(1)">
+        <img src="images/moment1.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(2)">
+        <img src="images/moment2.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(3)">
+        <img src="images/moment3.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(4)">
+        <img src="images/moment4.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(5)">
+        <img src="images/moment5.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(6)">
+        <img src="images/moment6.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(6)">
+        <img src="images/moment7.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(6)">
+        <img src="images/moment8.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(6)">
+        <img src="images/moment9.jpg">
+    </div>
+    <div class="thumbnail" onclick="currentSlide(6)">
+        <img src="images/moment10.jpg">
+    </div>
+</div>
+
+        <!-- Quote and Audio Gallery -->
+        <div class="quote-audio-gallery">
+            <h2>Quotes & Audios</h2>
+            <div class="quote-item">
+                <blockquote>"Your iconic quote here."</blockquote>
+                <audio controls>
+                    <source src="path_to_audio1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!-- Add more quotes and audio elements as needed -->
+        </div>
+
+        <!-- Video Gallery -->
+        <div class="video-gallery">
+            <h2>Videos</h2>
+            <div class="video-item">
+                <video controls>
+                    <source src="path_to_video_clip1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text">Caption for Video 1</div>
+            </div>
+            <!-- Add more video elements as needed -->
+        </div>
+    </div>
+</div>
+<script src="java.js"></script>
 </body>
 </html>
