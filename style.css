@@ -254,7 +254,7 @@ nav ul li a:hover::after{
     cursor: pointer; /* Change cursor to pointer on hover */
     margin-right: 10px; /* Adjust spacing between tab links */
     font-size: 20px;
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 /* Style the tab links on hover */
@@ -282,12 +282,17 @@ nav ul li a:hover::after{
     margin-top: none;
 }
 
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adjust this value to change spacing between grid items */
+    margin: 20px 0; /* Add some space around the entire gallery for better spacing */
+}
+
 
 /* Style the character container */
 .character-list .character {
-    display: flex; /* Use flexbox to control the layout */
-    flex-direction: column; /* Display the elements in a row layout */
-    align-items: center; /* Center-align items vertically */
+    
     margin-bottom: 5%; /* Adjust spacing between characters */
 }
 
@@ -323,6 +328,8 @@ nav ul li a:hover::after{
 }
 
 /* -------- Episodes --------- */
+
+
 
 .episodes-title {
     text-align: center;
@@ -388,6 +395,13 @@ nav ul li a:hover::after{
     margin-top: none;
 }
 
+.episode-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adjust this value to change spacing between grid items */
+    margin: 20px 0; /* Add some space around the entire gallery for better spacing */
+}
+
 .episode-list .episode {
     display: flex; /* Use flexbox to control the layout */
     flex-direction: row; /* Display the elements in a row layout */
@@ -428,8 +442,9 @@ nav ul li a:hover::after{
 }
 
 .rating img {
-    width: 2%; /* Set the desired width for the star */
-    height: 2%; /* Set the desired height for the star */
+    width: 4%; /* Set the desired width for the star */
+    height: 4%; /* Set the desired height for the star */
+    padding-bottom: 4px;
 }
 
 .rating {
@@ -439,19 +454,16 @@ nav ul li a:hover::after{
 
 
 /* <-------------Gallery-----------> */
-/* #gallery{
-    background-color: #275f24;
-} */
+
 .gallery-title {
     text-align: center;
     font-size: 70px; /* Adjust the font size as needed */
     color: #fff; /* Text color */
-    padding-top: 5%; /* Adjust the margin-top for positioning */
     padding-bottom: 5%;;
 }
 
 .image-gallery {
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .gallery-title span.box {
     background: linear-gradient(130deg, #46a08c 0%, #1C3F1D 100%, #303030 90%);
@@ -538,7 +550,7 @@ nav ul li a:hover::after{
     transition: opacity 0.3s ease;         /* Smooth transition effect */
 }
 
-.image-container:hover .caption {
+.image-container .caption {
     opacity: 1;                            /* Show the caption on hover */
 }
 
@@ -570,9 +582,58 @@ nav ul li a:hover::after{
 }
 
 .quote-audio-gallery {
-    margin-top: 10%;
+    background-color: #141414;  /* Adds a background color */
+    color: #fff;  /* Changes the text color */
+    padding: 20px;  /* Adds some spacing inside the container */
+    margin: 20px 0;  /* Adds spacing above and below the container */
 }
 
+.quote-audio-gallery h2 {
+    text-align: center;  /* Centers the heading text */
+    font-size: 28px;  /* Adjusts the font size of the heading */
+    margin-bottom: 20px;  /* Adds space below the heading */
+}
+
+.quote-item {
+    display: flex; /* Convert this container into a flex container */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center the child elements horizontally */
+    height: 100%; /* Make sure it takes the full height */
+    text-align: center;
+}
+
+
+.quote-item blockquote {
+    flex: 1;
+    font-style: italic;  /* Makes the quote italic */
+    font-size: 20px;  /* Adjusts the font size of the quote */
+    margin-bottom: 20px;  /* Adds space below the quote */
+    margin-inline: 10%;
+}
+
+.quote-item audio {
+    width: 50%;  /* Makes the audio player take up 80% of the container's width */
+    margin: 0 auto;  /* Centers the audio player */
+}
+
+
+.quote-item cite {
+    text-align: right; /* Right-aligns the text */
+    font-style: normal; /* Overrides the default italic styling of cite */
+    font-weight: bold; /* Makes the text bold */
+    margin-top: auto; /* Push the cite towards the audio player */
+    margin-bottom: 15px; /* Adds some spacing below the cite and above the audio player */
+    font-size: 16px; /* Adjusts the font size */
+    color: #33da01; /* Changes the color to a slightly lighter shade of white for differentiation */
+    margin-inline: 10%;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divides the container into two columns with equal width */
+    gap: 200px; /* Defines the space between grid items */
+    margin: 20px 0; /* Add some space around the entire gallery for better spacing */
+}
 
 
 @media only screen and (max-width: 600px) {
