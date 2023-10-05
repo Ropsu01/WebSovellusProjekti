@@ -636,6 +636,9 @@ nav ul li a:hover::after{
 }
 
 
+.video-item{
+    margin-top: 2%;
+}
 @media only screen and (max-width: 600px) {
     #header{
         height: 210vh;
