@@ -201,7 +201,9 @@ nav ul li a:hover::after{
 
 /* ----------Characters---------- */
 
-
+#characters{
+    background-color: #0a0a0a;
+}
 
 /* Add this to your CSS file */
 .characters-title {
@@ -329,7 +331,9 @@ nav ul li a:hover::after{
 
 /* -------- Episodes --------- */
 
-
+#episodes{
+    background-color: #141414;
+}
 
 .episodes-title {
     text-align: center;
@@ -454,6 +458,9 @@ nav ul li a:hover::after{
 
 
 /* <-------------Gallery-----------> */
+#gallery{
+    background-color: #0a0a0a;
+}
 
 .gallery-title {
     text-align: center;
@@ -639,6 +646,113 @@ nav ul li a:hover::after{
 .video-item{
     margin-top: 2%;
 }
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the size based on your preference */
+    gap: 20px; /* Space between each video item */
+    padding: 20px;
+}
+
+.video-item {
+    position: relative;
+}
+
+.video-item iframe {
+    width: 100%; /* To ensure that the video takes the full width of the grid item */
+    border: none;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px; /* Adjust based on your design preference */
+}
+
+.video-header {
+    text-align: center;
+    font-size: 24px; /* Adjust font size as desired */
+    margin-bottom: 20px; /* Add some space between the header and the videos */
+}
+/* <--------Trivia----------> */
+#trivia{
+    background-color: #141414;
+}
+
+.trivia-title {
+    text-align: center;
+    font-size: 70px; /* Adjust the font size as needed */
+    color: #fff; /* Text color */
+    padding-top: 5%; /* Adjust the margin-top for positioning */
+}
+
+/* ... other styles ... */
+
+.quiz-container {
+    width: 550px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #3a3a3a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.quiz-container h1 {
+    text-align: center;
+    color: #028122;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.option {
+    display: flex; /* Makes child elements display in a line */
+    align-items: center; /* Vertically aligns the radio and text */
+    margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+/* This part here */
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.quiz-container .quiz-button:hover {
+    background-color: #3071a9;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     #header{
         height: 210vh;
