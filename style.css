@@ -135,7 +135,7 @@ nav ul li a:hover::after{
     width: 100%;
     height: 100vh;
     background-image: url(images/wallpaper2.jpg);
-    
+    padding: 0 10%;  /* Add horizontal padding */
 }
 
 .about-title {
@@ -165,8 +165,7 @@ nav ul li a:hover::after{
 }
 
 .about-container {
-    max-width: 50%; /* Adjust the maximum width */
-    margin: 0 auto; /* Center the content horizontally */
+    
     padding: 20px;
     background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for readability */
     border-radius: 5px;
@@ -198,6 +197,53 @@ nav ul li a:hover::after{
 .explore-button2:hover {
     background: linear-gradient(130deg, #5cbd97 0%, #275f24 100%, #404040 90%);
 }
+
+/* Grid layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2%; 
+    margin-top: 20px; 
+    align-items: start;  /* Align the items to the start of their grid area */
+}
+
+
+.description {
+    padding-right: 10%;  /* Adjust the value as needed */
+}
+
+.trailer {
+    padding-left: 10%;  /* Adjust the value as needed */
+}
+
+
+.trailer iframe {
+    margin-top: 2%;
+    width: 100%;
+    border: none;
+}
+
+.source-icons {
+    margin-top: 20px;    /* Add some space between the trailer and icons */
+    text-align: center;  /* Center the icons horizontally */
+    font-size: 100px;     /* Adjust size of the icons */
+}
+
+.source-icons i {
+    margin: 0 10px;      /* Add some space between each icon */
+    cursor: pointer;     /* Change cursor to hand on hover to indicate it's clickable */
+    transition: 0.3s;    /* Smooth transition for any hover effects */
+}
+
+.source-icons i:hover {
+    color: #46a08c;      /* Change color on hover, adjust as needed */
+}
+
+a .fa-brands {
+    color: white;
+    text-decoration: none; /* This will remove any underlines that appear on hover */
+}
+
 
 /* ----------Characters---------- */
 
@@ -700,7 +746,9 @@ nav ul li a:hover::after{
 .quiz-container h1 {
     text-align: center;
     color: #028122;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
+
 
 .question {
     font-weight: bold;
@@ -750,6 +798,27 @@ nav ul li a:hover::after{
 
 .hide {
     display: none;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your preference */
+    gap: 20px; /* Space between each fact item */
+    margin-bottom: 20px; /* Space between facts and the quiz */
+   padding-inline: 20%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+
+.fact-item {
+    display: flex;             /* Convert container to flexbox */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: linear-gradient(to top, #031400, #002e00af);
+    text-align: center;      /* For textual content alignment */
+    flex-direction: column;  /* Stack items vertically if there are multiple items, if not this won't change anything */
 }
 
 
