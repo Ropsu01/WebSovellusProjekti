@@ -302,3 +302,42 @@ showAnswerButton.addEventListener('click', showAnswer);
 initializeQuiz();
 
 displayQuestion();
+
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
+function displayDate() {
+  document.getElementById("demo2").innerHTML = Date();
+}
+
+function myTimer() {
+  alert('Hello');
+}
+
+
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+
+  xhttp.onload = function() {
+    if (this.status == 200) {  // Check if request was successful
+      document.getElementById("responseContent").innerHTML = this.responseText;
+    } else {
+      console.error("Request failed with status:", this.status);
+    }
+  }
+
+  xhttp.onerror = function() {
+    console.error("Request failed");
+  };
+
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+

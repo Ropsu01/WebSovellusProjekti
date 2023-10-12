@@ -11,7 +11,6 @@
 
 <body>
 <div id="header">
-    
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
@@ -21,9 +20,9 @@
                 <li><a href="#characters">Characters</a></li>
                 <li><a href="#episodes">Episodes</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#">Trivia</a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="#">Music</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#">Dump</a></li>
+                
                
             </ul>
             
@@ -1126,12 +1125,37 @@
         <button id="showAnswer" class="quiz-button hide">Show Answer</button>
     </div>
 </div>
-
+</div>
+<div id="dump">
+    <h4 class="dump-title">Dump</h4>
+    <h3>Here are some random stuff for the project requirements. These are not related to the show in any way.</h3>
+    <div class="dump-content">
         
+            <div class="alert">
+                <h2>JavaScript Confirm Box</h2>
+                   <button onclick="myFunction()">Try it</button>
+                <p id="demo"></p>
+            </div>
+    <div class="event">
+        <h2>JavaScript HTML Events</h2>
+        <p>Click the button to display the date.</p>
 
-
-
+        <button onclick="displayDate()">The time is?</button>
+        <p id="demo2"></p>
     </div>
+    <div class="timer">
+        <h2>JavaScript Timing</h2>
+        <p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+        <button onclick="setTimeout(myTimer, 3000);">Try it</button>
+    </div>
+    <div class="demo3">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        <div id="responseContent"></div>
+    </div>
+    
+
+</div>
 <script src="java.js"></script>
 </body>
 </html>
