@@ -88,4 +88,4 @@ Successful implementation of an AJAX call or Fetch.
 
 ##### Yhteensä 15/20??
 
-### Sivu tehty rakkaudella :shipit:
+### Sivu tehty rakkaudella :sparkling_heart:
