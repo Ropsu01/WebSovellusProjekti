@@ -82,4 +82,10 @@ Successful implementation of an AJAX call or Fetch.
 
 -katso HTML 1/5
 
-##### Yhteensä 14/20??
+3/5: Data from the asynchronous call is displayed on the webpage.
+
+-esim AJAX kutsu
+
+##### Yhteensä 15/20??
+
+### Sivu tehty rakkaudella :shipit:
