@@ -75,12 +75,12 @@ en tiedä kuinka paljon näitä pitäisi käyttää mutta en keksinyt mitään j
 1/5:
 Use of timers.
 
--katso HTML 1/5
+-katso JavaScript 1/5
 
 2/5:
 Successful implementation of an AJAX call or Fetch.
 
--katso HTML 1/5
+-katso JavaScript 1/5
 
 3/5: Data from the asynchronous call is displayed on the webpage.
 
